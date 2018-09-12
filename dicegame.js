@@ -72,8 +72,19 @@ else if(select =FIVE){
     var d3 = Math.floor(Math.random() * 6) + 1;
     var d4 = Math.floor(Math.random() * 6) + 1;
     var d5 = Math.floor(Math.random() * 6) + 1;  
+    var diceTotal = d1 + d2 + d3 + d4 + d5;
+    die1.innerHTML = d1;
+    die2.innerHTML = d2;
+    die3.innerHTML = d3;
+    die4.innerHTML = d4;
+    die5.innerHTML = d5;
+    
+    status.innerHTML = "You rolled "+diceTotal+".";
+    if(d1 == d2 == d3 == d4 == d5 ){
+        status.innerHTML += " You get a free turn!!";
+    }
+  }
 
-}
 else if (select=SIX){
     
     var die1 = document.getElementById("die1");
