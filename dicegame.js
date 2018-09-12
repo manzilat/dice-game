@@ -1,5 +1,7 @@
 
+
 function rollDice(){
+ 
     var die1 = document.getElementById("die1");
     var die2 = document.getElementById("die2");
     var die3 = document.getElementById("die3");
@@ -25,4 +27,3 @@ function rollDice(){
         status.innerHTML += " DOUBLES! You get a free turn!!";
     }
 }
-
