@@ -1,4 +1,7 @@
 body {
     background-image: url("background.jpg");
-    background-color: #cccccc;
+    color:palevioletred;
  }
+ h1 {
+    color: rgb(20, 20, 18); 
+}
