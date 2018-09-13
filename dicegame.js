@@ -1,14 +1,15 @@
 let playerOneScore = 0;
 let playerTwoScore = 0;
 
+
 function rollDice(){
  
-    var die1 = document.getElementById("die1").innerHTML;
-    var die2 = document.getElementById("die2").innerHTML;
-    var die3 = document.getElementById("die3").innerHTML;
-    var die4 = document.getElementById("die4").innerHTML;
-    var die5 = document.getElementById("die5").innerHTML;
-    var die6 = document.getElementById("die6").innerHTML;
+    var die1 = document.getElementById("die1");
+    var die2 = document.getElementById("die2");
+    var die3 = document.getElementById("die3");
+    var die4 = document.getElementById("die4");
+    var die5 = document.getElementById("die5");
+    var die6 = document.getElementById("die6");
 
     var status = document.getElementById("status");
 
@@ -19,22 +20,8 @@ function rollDice(){
      var d5 = Math.floor(Math.random() * 12) + 1;
      var d6 = Math.floor(Math.random() * 20) + 1;
      var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
-
-    let dropdownValue = document.getElementById("rollDice").value;
-    let diceArray = [4, 6, 8, 10, 12, 20];
-    let diceTotal = 0;
-    let rolls = [];
-
-    for(let i = 0; i < diceArray.length; i++ ) {
-        if(i===dropdownValue) { // compare 'i' to 'dropdownValue'
-            let roll = Math.floor(Math.random() * diceArray[i]) + 1;
-            diceTotal += roll;
-            rolls.push(roll);
-        }
-        else {
-            // set die to 0
-        }
-    }
+     
+     
 
     die1.innerHTML = d1;
     die2.innerHTML = d2;

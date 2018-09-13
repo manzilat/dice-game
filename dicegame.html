@@ -2,19 +2,10 @@
 <html>
 <head>
         <h1 style="font-size:400%;background-color: lemonchiffon;">** Run For It** Dice Game</h1>
-        <body class="background-image">
+        
                 <link rel="stylesheet" type="text/css" href="dicegame.CSS">
 
                
-                 
-        <select id="rollDice" onchange="rollDice();">
-            <option value="1">ONE</option>
-            <option value="2">TWO</option>
-            <option value="3">THREE</option>
-            <option value="4">FOUR</option>
-            <option value="5">FIVE</option>
-            <option value="6">SIX</option>
-        </select>
 <style>
      div.dice{
 	        float:left;
@@ -31,7 +22,7 @@
 
 <script src="dicegame.js"> </script>
 </head>
-
+<body class="background-image">
         <div id="die1" class="dice">0</div>
         <div id="die2" class="dice">0</div>
         <div id="die3" class="dice">0</div>
@@ -39,7 +30,7 @@
         <div id="die5" class="dice">0</div>
         <div id="die6" class="dice">0</div>
 <button onclick="rollDice()">Roll Dice</button>   
-<button onclick="rollDice()">Click me</button>
+
         
              
         
@@ -70,5 +61,6 @@
                
 
         </p>
+        
 </body>
 </html>
