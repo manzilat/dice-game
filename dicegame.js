@@ -1,12 +1,5 @@
 let playerOneScore = 0;
 let playerTwoScore = 0;
-var score;
-switch(rollDice()){
-    case 0: 
-            if(rollDice=1,2){
-                score=10;
-                return score;
-            }}
 
 
 function rollDice(){
@@ -26,9 +19,8 @@ function rollDice(){
      var d4 = Math.floor(Math.random() * 10) + 1;
      var d5 = Math.floor(Math.random() * 12) + 1;
      var d6 = Math.floor(Math.random() * 20) + 1;
-     var diceTotal = d1 + d2 + d3 + d4 + d5 + d6;
      
-     
+     console.log('die1.innerHTML before', die1.innerHTML);
 
     die1.innerHTML = d1;
     die2.innerHTML = d2;
@@ -36,11 +28,21 @@ function rollDice(){
     die4.innerHTML = d4;
     die5.innerHTML = d5;
     die6.innerHTML = d6;
-    status.innerHTML = "You rolled "+diceTotal+".";
-    if(d1 == d2 == d3 == d4 == d5 == d6){
-        status.innerHTML += " DOUBLES! You get a free turn!!";
-    }
 
+    let rollResults = [d1, d2, d3, d4, d5, d6];
+    let rollOneResult = document.getElementById("die1").innerHTML;
+
+   let diceTotal = d1 + d2 + d3 + d4 + d5;
+    status.innerHTML = "You rolled "+diceTotal+".";
+    if(d1 == d3 && d1 == d5 || d2 == d4 && d2 == d6){
+        status.innerHTML += " You get a free turn!!";
+    }
+   
+    let dropdownvalue=document.getElementById("rollDice");
+    if (d1=1){
+        score=30;
+
+    }
 }
 
 
