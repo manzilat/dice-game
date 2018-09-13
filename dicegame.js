@@ -20,8 +20,9 @@ function rollDice(){
      var d5 = Math.floor(Math.random() * 12) + 1;
      var d6 = Math.floor(Math.random() * 20) + 1;
      
-     console.log('die1.innerHTML before', die1.innerHTML);
-
+     console.log('die1.innerHTML before'&&'die2.innerHtml before',die1.innerHTML,die2.innerHTML);
+     console.log('die3.innerHTML before'&&'die4.innerHtml before',die3.innerHTML,die4.innerHTML);
+     console.log('die5.innerHTML before'&&'die6.innerHtml before',die5.innerHTML,die6.innerHTML);
     die1.innerHTML = d1;
     die2.innerHTML = d2;
     die3.innerHTML = d3;
@@ -29,10 +30,22 @@ function rollDice(){
     die5.innerHTML = d5;
     die6.innerHTML = d6;
 
+   
+    let rollOneResult = document.getElementById("die1"&&"die2").innerHTML;
+   
     let rollResults = [d1, d2, d3, d4, d5, d6];
-    let rollOneResult = document.getElementById("die1").innerHTML;
+    function checkForTenPoints(rollResults){
+    let points=0;
+    for(let i=0;i<rollResults.length;i++){
+        if(rollResults [i] + 1=== rollResults[i+1] || rollResults[i] - 1 === rollResults[i+1]) {
+            points += 10;
 
-   let diceTotal = d1 + d2 + d3 + d4 + d5;
+        }
+    }
+    return points;
+    status.innerHTML = "You scored "+points+".";
+}
+
     status.innerHTML = "You rolled "+diceTotal+".";
     if(d1 == d3 && d1 == d5 || d2 == d4 && d2 == d6){
         status.innerHTML += " You get a free turn!!";
