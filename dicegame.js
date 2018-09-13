@@ -1,5 +1,12 @@
 let playerOneScore = 0;
 let playerTwoScore = 0;
+var score;
+switch(rollDice()){
+    case 0: 
+            if(rollDice=1,2){
+                score=10;
+                return score;
+            }}
 
 
 function rollDice(){
@@ -33,6 +40,7 @@ function rollDice(){
     if(d1 == d2 == d3 == d4 == d5 == d6){
         status.innerHTML += " DOUBLES! You get a free turn!!";
     }
+
 }
 
 
