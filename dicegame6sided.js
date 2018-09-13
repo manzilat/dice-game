@@ -1,7 +1,4 @@
-
-
-
-function rollDice(){
+function rollDice6(){
  
     var die1 = document.getElementById("die1");
     var die2 = document.getElementById("die2");
@@ -12,15 +9,13 @@ function rollDice(){
 
     var status = document.getElementById("status");
 
-     var d1 = Math.floor(Math.random() * 4) + 1
+     var d1 = Math.floor(Math.random() * 6) + 1;
      var d2 = Math.floor(Math.random() * 6) + 1;
-     var d3 = Math.floor(Math.random() * 8) + 1;
-     var d4 = Math.floor(Math.random() * 10) + 1;
-     var d5 = Math.floor(Math.random() * 12) + 1;
-     var d6 = Math.floor(Math.random() * 20) + 1;
-
-
-
+     var d3 = Math.floor(Math.random() * 6) + 1;
+     var d4 = Math.floor(Math.random() * 6) + 1;
+     var d5 = Math.floor(Math.random() * 6) + 1;
+     var d6 = Math.floor(Math.random() * 6) + 1;
+     
      
      console.log('die1.innerHTML before',die1.innerHTML);
      console.log('die2.innerHtml before',die2.innerHTML);
@@ -62,40 +57,3 @@ console.log(score);
         status.innerHTML += " You get a free turn!!";
     }
    
-    
-}
-
-
-function rollDice6(){
-    var d7 = Math.floor(Math.random() * 6) + 1;
-     var d8 = Math.floor(Math.random() * 6) + 1;
-     var d9 = Math.floor(Math.random() * 6) + 1;
-     var d10 = Math.floor(Math.random() * 6) + 1;
-     var d11 = Math.floor(Math.random() * 6) + 1;
-     var d12 = Math.floor(Math.random() * 6) + 1;
-     die1.innerHTML = d7;
-     die2.innerHTML = d8;
-     die3.innerHTML = d9;
-     die4.innerHTML = d10;
-     die5.innerHTML = d11;
-     die6.innerHTML = d12;
-     console.log('die1.innerHTML before',die7.innerHTML);
-     console.log('die2.innerHtml before',die8.innerHTML);
-     console.log('die3.innerHTML before',die9.innerHTML);
-     console.log('die4.innerHtml before',die10.innerHTML)
-     console.log('die5.innerHTML before',die11.innerHTML);
-     console.log('die6.innerHtml before',die12.innerHTML);
-    die1.innerHTML = d1;
-    die2.innerHTML = d2;
-    die3.innerHTML = d3;
-    die4.innerHTML = d4;
-    die5.innerHTML = d5;
-    die6.innerHTML = d6;
-    console.log('die1.innerHTML after',die1.innerHTML);
-    console.log('die2.innerHtml  after',die2.innerHTML);
-    console.log('die3.innerHTML  after',die3.innerHTML);
-    console.log('die4.innerHtml  after',die4.innerHTML)
-    console.log('die5.innerHTML  after',die5.innerHTML);
-    console.log('die6.innerHtml  after',die6.innerHTML); 
-
-}
