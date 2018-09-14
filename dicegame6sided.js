@@ -56,4 +56,4 @@ console.log(score);
     if(d1 == d3 && d1 == d5 || d2 == d4 && d2 == d6){
         status.innerHTML += " You get a free turn!!";
     }
-   
+}
