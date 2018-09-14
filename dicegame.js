@@ -21,19 +21,21 @@ function rollDice(){
 
 
 
-     
+     console.log("NUMBERS ON PREVIOUS DICE WAS");
      console.log('die1.innerHTML before',die1.innerHTML);
      console.log('die2.innerHtml before',die2.innerHTML);
      console.log('die3.innerHTML before',die3.innerHTML);
      console.log('die4.innerHtml before',die4.innerHTML)
      console.log('die5.innerHTML before',die5.innerHTML);
      console.log('die6.innerHtml before',die6.innerHTML);
+     console.log("NUMBERS ON PREVIOUS DICE WAS");
     die1.innerHTML = d1;
     die2.innerHTML = d2;
     die3.innerHTML = d3;
     die4.innerHTML = d4;
     die5.innerHTML = d5;
     die6.innerHTML = d6;
+    console.log("NUMBERS ON CURRENT DICE ARE");
     console.log('die1.innerHTML after',die1.innerHTML);
     console.log('die2.innerHtml  after',die2.innerHTML);
     console.log('die3.innerHTML  after',die3.innerHTML);
