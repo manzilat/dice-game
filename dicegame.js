@@ -52,7 +52,20 @@ function rollDice(){
         
     }
     
-   
+    function checkForTenPoints(rollResults){
+
+        let points=0;
+    for(let i=0;i<=rollResults.length;i++){
+        if(rollResults[i]+1 === rollResults[i+1] ) {
+            points += 10;
+            
+        }
+           
+    }
+    
+    status.innerHTML = "You scored "+points+".";
+    return points;
+}
 let score=checkForTenPoints(rollResults);
 // console.log('SCORE', score);
 
